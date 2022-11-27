@@ -1,0 +1,25 @@
+
+.container {
+    padding: 10px;
+    
+}
+
+input {
+    margin-right: 2rem;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #000000;
+}
+
+button {
+    background-color: #53c853;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #FAFAFA
+}

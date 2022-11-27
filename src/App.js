@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css'
+// import styled from 'styled-components'
+import style from './App.module.css'
+import Card from './components/Card/Card.jsx'
+import Cards from './components/Cards/Cards.jsx'
+import SearchBar from './components/SearchBar/SearchBar.jsx'
+import characters, { Rick } from './data.js'
 
-function App() {
+// const DivTemplate = styled.div`
+//   text-align: center;
+//   padding: 25px;
+// `
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.main}>
+        <Card
+          name={Rick.name}
+          species={Rick.species}
+          gender={Rick.gender}
+          image={Rick.image}
+          onClose={() => window.alert('Emulamos que se cierra la card')}
+        />
+      <hr />
+      <Cards
+        characters={characters}
+      />
+      <hr />
+      <SearchBar
+        onSearch={(characterID) => window.alert(characterID)}
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

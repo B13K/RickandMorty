@@ -1,0 +1,56 @@
+@font-face {
+    font-family: rick_and_morty;
+    src: url('../../assets/Montserrat-Italic.ttf');
+}
+
+.card {
+    background-color: #FAFAFA;
+    /* background-color: yellow; */
+    border: 5px solid #06d6a0;
+    font-family: rick_and_morty;
+    /* width: 19rem; */
+    /* height: 30rem; */
+    border-radius: 2rem;
+}
+
+.buttonClass {
+    padding: 10px 20px 10px 10px;
+    text-align: end;
+}
+
+button {
+    background-color: red;
+    border-color: black;
+    color: #FFFFFF;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2) ;
+    border-color: #06d6a0;
+}
+
+
+.imgClass {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgClass h2 {
+    background-color: rgb(125, 125, 125, 0.4);
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.nameClass {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+}
