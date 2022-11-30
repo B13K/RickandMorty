@@ -1,6 +1,7 @@
 .container {
+    margin: 5rem 2rem;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
-    gap: 2rem
+    gap: 2rem;
 }
