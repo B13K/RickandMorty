@@ -5,15 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 20px;
-    
+    /* margin: 0 20px;   */
+    gap: 1rem;
 
     
 }
 
 
 input {
-    margin-right: 2rem;
     height: 2rem;
     width: 10rem;
     border-radius: 0.5rem;

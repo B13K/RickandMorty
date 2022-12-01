@@ -1,7 +1,11 @@
 
 import style from './App.module.css'
+import { Routes, Route } from 'react-router-dom'
 import Cards from './components/Cards/Cards.jsx'
 import Nav from './components/Nav/Nav.jsx'
+import About from './components/About/About'
+import Detail from './components/Detail/Detail.jsx'
+import Error from './components/Error/Error'
 
 import React from 'react'
 
@@ -53,9 +57,13 @@ function App () {
   return (
     <div className={style.main}>
       <Nav onSearch={onSearch}/>
-      <Cards
-        characters={characters} onClose={onClose}
-      />
+      <Routes>
+        <Route path='/' element={<Cards 
+        characters={characters} onClose={onClose}/>} />
+        <Route path='/about' element={<About />} />
+        <Route path='/detail/:detailId' element={<Detail />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
     </div>
   )
 }

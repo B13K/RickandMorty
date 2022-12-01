@@ -1,0 +1,25 @@
+.containerDetail {
+    display: flex;
+    margin: 5rem 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.containerDetail div {
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.containerDetail h1 {
+    color: white;
+}
+
+.containerDetail strong {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

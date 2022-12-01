@@ -1,0 +1,26 @@
+
+.containerError {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    padding: 3rem;
+}
+.containerError div {
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 2rem;
+}
+
+.containerError h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.containerError p {
+    text-transform: uppercase;
+    text-align: 3rem;
+    font-weight: bold;
+
+}

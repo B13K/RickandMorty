@@ -21,14 +21,10 @@ export default function SearchBar(props) {
    }
 
    return (
-      <div className={styles.container}>
-         <div className={styles.cuadros}>      
+      <div className={styles.container}>   
             <button onClick={onRandom}>Random</button>
-         </div>
-         <div className={styles.cuadros}> 
             <input type='search' onChange={onChange}/>
             <button onClick={() => props.onSearch(id)}>Agregar</button>
-         </div>
       </div>
    );
 }

@@ -6,6 +6,7 @@ export default function Cards(props) {
    return <div className={styles.container}>
       {
          characters.map((c, index) => <Card key={index}
+            id = {c.id}
             name={c.name}
             species={c.species}
             gender={c.gender}
