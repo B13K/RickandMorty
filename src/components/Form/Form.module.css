@@ -1,0 +1,52 @@
+.containerForm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerForm form {
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.containerForm div {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: white;
+    position: relative;
+}
+
+.containerForm input {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid blue;
+}
+
+.containerForm .warning {
+    display: block;
+    color:red;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 50px
+}
+
+.containerForm button {
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white
+
+}

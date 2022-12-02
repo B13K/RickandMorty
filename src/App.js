@@ -1,30 +1,23 @@
-
+import React, { useEffect } from 'react';
 import style from './App.module.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigate} from 'react-router-dom'
+import Form from './components/Form/Form'
 import Cards from './components/Cards/Cards.jsx'
 import Nav from './components/Nav/Nav.jsx'
 import About from './components/About/About'
 import Detail from './components/Detail/Detail.jsx'
 import Error from './components/Error/Error'
 
-import React from 'react'
 
 function App () {
 
-  const example = {
-    name: 'Morty Smith',
-    species: 'Human',
-    gender: 'Male',
-    image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
- };
-  
+  let { pathname } = useLocation();  
   let [characters, setCharacters] = React.useState([])
+  let navigate = useNavigate();
+  let [ access, setAccess] = React.useState(false)
+  let username = 'jonathan_3_7@hotmail.com'
+  let password = '123456789'
 
-
-  // const onSearch = (character) => {
-  //   console.log(character)
-  //   setCharacters(characters.concat(example))
-  // }
 
   const onSearch = (character) => {
     let isCharacter = characters.filter(c => c.id === parseInt(character))
@@ -48,17 +41,32 @@ function App () {
   }
 
   const onClose = (id) => {
-    console.log(id)
     setCharacters((oldChars) => oldChars.filter(c => c.id !== id))
   }
 
+  function login(userData){
+    if(userData.username === username && userData.password === password){
+      setAccess(true);
+      navigate('/home');
+    }
+  }
+
+  function logout(){
+    setAccess(false);
+    navigate('/')
+  }
+
+  useEffect(() => {
+    !access && navigate('/');
+  }, [access])
 
 
   return (
     <div className={style.main}>
-      <Nav onSearch={onSearch}/>
+      {pathname==='/'? null : <Nav onSearch={onSearch} logout={logout}/>}
       <Routes>
-        <Route path='/' element={<Cards 
+        <Route path='/' element={<Form  login={login}/>} />
+        <Route path='/home' element={<Cards 
         characters={characters} onClose={onClose}/>} />
         <Route path='/about' element={<About />} />
         <Route path='/detail/:detailId' element={<Detail />} />

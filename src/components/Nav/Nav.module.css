@@ -6,6 +6,18 @@
     justify-content: space-between;
 }
 
+.header .button {
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white
+}
+
 .link {
     display: flex;
     gap: 2rem;

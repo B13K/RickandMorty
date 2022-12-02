@@ -7,10 +7,11 @@ function Nav(props){
     return (
         <div className={styles.header}>   
             <div className={styles.link}>
+                <button onClick={props.logout} className={styles.button}>Logout</button>
                 <Link to='/about'>
                     <p>About</p>
                 </Link>
-                <Link to='/'>
+                <Link to='/home'>
                     <p>Home</p>
                 </Link>
             </div>

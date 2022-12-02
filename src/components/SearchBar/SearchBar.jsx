@@ -21,7 +21,7 @@ export default function SearchBar(props) {
    }
 
    return (
-      <div className={styles.container}>   
+      <div className={styles.containerSearchBar}>   
             <button onClick={onRandom}>Random</button>
             <input type='search' onChange={onChange}/>
             <button onClick={() => props.onSearch(id)}>Agregar</button>

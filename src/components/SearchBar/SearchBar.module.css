@@ -1,5 +1,5 @@
 
-.container {
+.containerSearchBar {
     padding: 10px;
     height: 80px;
     display: flex;
@@ -12,14 +12,14 @@
 }
 
 
-input {
+.containerSearchBar input {
     height: 2rem;
     width: 10rem;
     border-radius: 0.5rem;
     border: solid 0.1rem #000000;
 }
 
-button {
+.containerSearchBar button {
     background-color: #53c853;
     color: #FFFFFF;
     padding: 0.5rem;
