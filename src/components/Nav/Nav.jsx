@@ -8,11 +8,14 @@ function Nav(props){
         <div className={styles.header}>   
             <div className={styles.link}>
                 <button onClick={props.logout} className={styles.button}>Logout</button>
-                <Link to='/about'>
-                    <p>About</p>
-                </Link>
                 <Link to='/home'>
                     <p>Home</p>
+                </Link>
+                <Link to='/favorites'>
+                    <p>favorites</p>
+                </Link>
+                <Link to='/about'>
+                    <p>About</p>
                 </Link>
             </div>
             <SearchBar onSearch={props.onSearch}/>

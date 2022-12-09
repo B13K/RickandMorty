@@ -7,6 +7,7 @@ import Nav from './components/Nav/Nav.jsx'
 import About from './components/About/About'
 import Detail from './components/Detail/Detail.jsx'
 import Error from './components/Error/Error'
+import Favorites from './components/Favorites/Favorites.js'
 
 
 function App () {
@@ -70,6 +71,7 @@ function App () {
         characters={characters} onClose={onClose}/>} />
         <Route path='/about' element={<About />} />
         <Route path='/detail/:detailId' element={<Detail />} />
+        <Route path='/favorites' element={<Favorites />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </div>

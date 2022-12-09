@@ -3,6 +3,24 @@
     src: url('../../assets/Montserrat-Italic.ttf');
 }
 
+.containerFavorites {
+    margin: 5rem 2rem;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.containerFavoritesCard {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
 .card {
     background-color: #FAFAFA;
     /* background-color: yellow; */
@@ -13,30 +31,6 @@
     border-radius: 2rem;
 }
 
-.card .buttonClass {
-    padding: 10px 20px 10px 10px;
-    text-align: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card .buttonClass .buttonClose{
-    background-color: red;
-    border-color: black;
-    color: #FFFFFF;
-    height: 1.5rem;
-    width: 1.5rem;
-    text-align: center;
-    transition: all 0.2s ease-in;
-}
-
-.card .buttonClass .buttonClose:hover {
-    cursor: pointer;
-    transform: scale(1.2) ;
-    border-color: #06d6a0;
-}
-
 
 .imgClass {
     display: flex;
@@ -45,7 +39,7 @@
     justify-content: center;
 }
 
-.imgClass h2 {
+.imgClass .name {
     background-color: rgb(125, 125, 125, 0.4);
     position: absolute;
     bottom: 5px;
