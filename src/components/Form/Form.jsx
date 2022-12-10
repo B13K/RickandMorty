@@ -3,7 +3,7 @@ import styles from './Form.module.css'
 
 
 const regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-const regexPassword = /^\d{6,10}$/
+const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,10})/;
 export function validate(errors){
     const error = {}
     if(!(regexEmail.test(errors.username))){

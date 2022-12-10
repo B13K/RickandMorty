@@ -6,7 +6,7 @@ function About() {
     <div className={Styles.containerAbout}>
         <h1>Jonathan Berna Alejandro</h1>
         <p>Peruano</p>
-        <p>33 Anios</p>
+        <p>Aprendiendo programacion en <em>Soy Henry</em></p>
     </div>
     )
 

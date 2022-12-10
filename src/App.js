@@ -17,7 +17,7 @@ function App () {
   let navigate = useNavigate();
   let [ access, setAccess] = React.useState(false)
   let username = 'jonathan_3_7@hotmail.com'
-  let password = '123456789'
+  let password = 'Jon12345'
 
 
   const onSearch = (character) => {
